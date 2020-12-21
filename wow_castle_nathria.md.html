@@ -51,7 +51,7 @@
 
 Фаза 1 (примерно 110 сек, по заполнению шкалы энергии):
 - БЛ со старта.
-- Танки меняются на каждом https://ru.wowhead.com/spell=328857/exsanguinating-bite (вешает дебафф https://ru.wowhead.com/spell=328897/exsanguinated ).
+- Танки меняются на каждом https://ru.wowhead.com/spell=328857/exsanguinating-bite (вешает дебаф https://ru.wowhead.com/spell=328897/exsanguinated ).
 - Выносить из рейда красную стрелку https://ru.wowhead.com/spell=342074/echolocation. 
 - Мили уклоняются от фронталки https://ru.wowhead.com/spell=343005/blind-swipe.
 - Лосать https://ru.wowhead.com/spell=345936/earsplitting-shriek за колоннами, дважды за фазу.
@@ -126,6 +126,7 @@
 - В середине комнаты появляется огромный меч.
 - Второй портал ставят рядом с ним.
 - Рейд сопротивляется притягиванию к мечу (помогают https://ru.wowhead.com/spell=192077/wind-rush-totem и https://ru.wowhead.com/spell=77761/stampeding-roar ), на последних секундах таймера прыгаем в портал.
+- БЛ после засасывания.
 
 
 <a name="SunKingsSalvation" />
@@ -141,7 +142,7 @@
 
 Фазы с аддами (до 45% и до 90% хп Кель'таса):
 - Приоритет https://ru.wowhead.com/npc=165762/soul-infuser (Infusers) > https://ru.wowhead.com/npc=165763/vile-occultist (Occultists) > https://ru.wowhead.com/npc=165764/rockbound-vanquisher (Vanquishers) > https://ru.wowhead.com/npc=167566/bleakwing-assassin (Assassins) > https://ru.wowhead.com/npc=168700/pestering-fiend (Fiends).
-  - https://ru.wowhead.com/npc=165762/soul-infuser - Всячески контроллить, убить их до того как они доберуться до постаментов и скастуют https://ru.wowhead.com/spell=325665/soul-infusion. После смерти оставляют сферы, дающие хилу бафф https://ru.wowhead.com/spell=326078/infusers-boon.
+  - https://ru.wowhead.com/npc=165762/soul-infuser - Всячески контроллить, убить их до того как они доберуться до постаментов и скастуют https://ru.wowhead.com/spell=325665/soul-infusion. После смерти оставляют сферы, дающие хилу баф https://ru.wowhead.com/spell=326078/infusers-boon.
   - https://ru.wowhead.com/npc=165763/vile-occultist - Сбивать каст https://ru.wowhead.com/spell=333002/vulgar-brand и диспелить его наложение. После смерти она оставляет https://ru.wowhead.com/npc=165778/essence-font , полный отхил которой восстанавливает Кель'тасу 1% хп.
   - https://ru.wowhead.com/npc=165764/rockbound-vanquisher - Стараться убить до второго применения https://ru.wowhead.com/spell=325506/concussive-smash (сбивает ченнел в постамент), танкам меняться по спадению стаков https://ru.wowhead.com/spell=325442/vanquished.
   - https://ru.wowhead.com/npc=167566/bleakwing-assassin - Держать 8+ ярдов с меткой https://ru.wowhead.com/spell=341473/crimson-flurry и убить его до окончания каста https://ru.wowhead.com/spell=333145/return-to-stone.
@@ -211,18 +212,47 @@
 
 - [Гайд IV](https://www.icy-veins.com/wow/lady-inerva-darkvein-strategy-guide-for-castle-nathria)
 - Гайд Wowhead: https://ru.wowhead.com/guides/lady-inerva-darkvein-castle-nathria-raid-strategy-guide
-- [Видео IV](https://youtu.be/hLXS8BOXShQ)
+- [Видео IV](https://youtu.be/hLXS8BOXShQ) (плохое)
 - [Видео на русском](https://youtu.be/6vecFshajIA?list=PLJjqVD7EUL48pM8lJK5CD_BgJSxxF8eon)
 - [Гайд Mythic Trap](https://mythictrap.com/castleNathria/ladyInervaDarkvein)
 - [Гайд CL](https://complexity.gg/heroic-lady-inerva-darkvein-boss-guide/)
 
-- Before pulling, assign half of your DPS to each marked small add for interrupts.
-- Tanks keep the boss toward the middle of the room and taunt swap at two stacks of the https://ru.wowhead.com/spell=325382/warped-desires debuff.
-- Ranged players stay spread out around the room and soak red circles.
-- Players linked with beams need to despawn the red orbs by linking all three orbs with the beams at the same time.
-- When the adds spawn, the assigned DPS need to chain interrupt the small ones, and the big one needs to be tanked.
-- Drain each filled container when the boss switches focus to the next container.
-
+- В бою присутствуют 4 контейнера, каждый из них отвечает за одну из механик босса (и эти механики работают весь бой).
+- Контейнеры постоянно заполняются анимой. По заполнению на 33% и 66% контейнер усиливает соответствующую механику абилку босса.
+- На протяжении всего боя контейнеры необходимо опустошать, открывая их (просто кликнув). 
+  - Если какой-то заполнится полностью, то вайп (https://ru.wowhead.com/spell=325225/container-breach ).
+  - Открывать одновременно более одного контейнера опасно (https://ru.wowhead.com/spell=325184/loose-anima ).
+- Босс переходит между контейнерами каждые 25% своего хп, слева направо, значительно ускоряя заполение текущего контейнера.
+  - Текущий активный контейнер открыть невозможно.
+  - Опустошать следующий контейнер пока босс подходит к пороговому 25% значению. 
+  - Как только босс перешел к новому контейнеру - открывать предыдущий.
+  
+- 1-й контейнер (100%-75% хп босса):
+  - Механика: https://ru.wowhead.com/spell=325379/expose-desires. Танки меняются на 2 стаках.
+  - 33%: На рандомных не-танков вешается https://ru.wowhead.com/spell=325908/shared-cognition , который копирует в них танковый урон. Необходимо прохиливать.
+  - 66%: После окончания танковой доты происходит взрыв в радиусе от танка, который должен отойти от рейда (https://ru.wowhead.com/spell=325384/change-of-heart ).
+- 2-й контейнер (75%-50% хп):
+  - Механика: Периодически вылетают (3?) бутылки, необходимо перекрыть места падения - встать (одному человеку) в красный круг, иначе взрыв по рейду. Места попадания рандомные, поэтому босса держат в центре, рдд рассредоточены вокруг, готовые перекрыть.
+  - 33%: В местах падения бутылок остаются красные лужи (https://ru.wowhead.com/spell=325718/lingering-anima ) и не исчезают до конца боя.
+  - 66%: При первом приземлении бутылка отскакивает в рандомном направлении. Необходимо перекрывать два раза (и остаются две лужи).
+- 3-й контейнер (50%-25% хп):
+  - Механика: Периодически появляются три красные сферы (https://ru.wowhead.com/spell=326040/sins-of-the-past ).
+    - Дамажат ближайшего игрока.
+    - На 3 игроков вешается https://ru.wowhead.com/spell=324983/shared-suffering , образуя 3 луча между парами игроков. В момент наложения игроков откинет.
+    - Эти игроки должны одновременно перекрыть своими лучами все три сферы, тогда те исчезнут. Иначе сферы сами исчезнут через 45 сек, взрывая рейд (https://ru.wowhead.com/spell=331527/indemnification ).
+  - 33%: Теперь сферы соединены тремя лучами, которые наносят урон при пересечении (https://ru.wowhead.com/spell=326538/anima-web ).
+  - 66%: Сферы и их лучи начинают вращаться. Краборезка.
+  - (!) Вероятно это самая сложная фаза, можно сдать БЛ чтобы пройти быстрее.
+- 4-й контейнер (25%-0% хп):
+  - Механика: Босс дебафает двух игроков, вешая https://ru.wowhead.com/spell=342320/lightly-concentrated-anima.
+    - Игроков видно по большому красному кругу.
+    - По окончанию дебафа происходит взрыв в 8 м, в игроке появляется адд.
+    - Оба адда стационарны, поэтому игроки с дебафом заранее должны по сбежаться к боссу (а остальные выбежать из красного круга).
+    - Маленького адда фокусят первым. Постоянно кастует https://ru.wowhead.com/spell=331550/condemn , необходима ротация интерраптов под конец каста. Танковать не нужно.
+    - Большого адда необходимо танковать в мили, иначе он кастует несбиваемый https://ru.wowhead.com/spell=334017/condemn.
+  - 33%: Игроки с дебафом неподвижны (https://ru.wowhead.com/spell=341746/rooted-in-anima ) и не смогут подбежать к боссу. Необходимо всем быть ближе к боссу перед кастом.
+  - 66%: По окончании дебафа из игроков вылетаю убивающие сферы (https://ru.wowhead.com/spell=325596/fragments-of-shadow ). 
+    
 
 <a name="Sludgefist" />
 # Грязешмяк (Sludgefist)
